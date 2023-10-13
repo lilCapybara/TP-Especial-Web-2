@@ -21,7 +21,7 @@ Por otro lado. la tabla transactions se relaciona a las demas mediante las clave
 
 Para la segunda entrega se agrego la funcionalidad del carrito de la compra y el login.
 
-Como aun no se pedia hacer un regiustro de usuarios desde la pagina, insertamos manualmente 2 usuarios con sus respectivas contraseñas hasheadas para poder testear la pagina. Estos son:
+Como aun no se pedia hacer un registro de usuarios desde la pagina, insertamos manualmente 2 usuarios con sus respectivas contraseñas hasheadas para poder testear la pagina. Estos son:
 
 Usuario: admin || Contraseña: 123456
 
