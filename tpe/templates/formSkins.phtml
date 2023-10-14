@@ -1,0 +1,47 @@
+<?php
+if (isset($_SESSION['user_name']) && $_SESSION['user_name'] === 'admin') {  //Solo mostrara esto si el usuario logueado es el admin
+?>
+
+<h1>Agregar skin</h1>
+<form action="agregarSkin" method="POST" class="my-4">
+
+    <div class="row">
+
+        <!--Nombre de campeon-->
+        <div class="col-9">
+            <div class="form-group">
+                <label>ID del campeon</label>
+                <input required name="Champion_id" type="text" class="form-control">
+            </div>
+        </div>
+
+        <!--Nombre de skin-->
+        <div class="col-9">
+            <div class="form-group">
+                <label>Nombre de la skin</label>
+                <input required name="nombreSkin" type="text" class="form-control">
+            </div>
+        </div>
+         
+        <!--Precios-->
+        <div class="col-3">
+            <div class="form-group">
+                <label>Precio</label>   
+                <select required name="Precio" class="form-control">
+                    <option value="" disabled selected></option>
+                    <option value="450">450</option>
+                    <option value="1200">1200</option>
+                    <option value="3500">3500</option>
+                    <option value="4800">4800</option>
+                    <option value="6300">6300</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+</form>
+
+<?php } ?>
