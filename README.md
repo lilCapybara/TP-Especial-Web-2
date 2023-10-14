@@ -23,8 +23,12 @@ Para la segunda entrega se agrego la funcionalidad del carrito de la compra y el
 
 Como aun no se pedia hacer un registro de usuarios desde la pagina, insertamos manualmente 2 usuarios con sus respectivas contraseñas hasheadas para poder testear la pagina. Estos son:
 
-Usuario: admin || Contraseña: 123456
+Usuario: admin || Contraseña: 123456  (Posee las autorizaciones necesarias para realizar ediciones en la pagina)
 
-usuario: normal || Contraseña: 654321
+usuario: normal || Contraseña: 654321  (Solo puede ver la lista de campeones y skins y agregar items al carrito de la compra)
 
-Ademas del diagrama en pdf, adjuntamos para mayor comodidad un archivo .jpeg del diagrama DER, puesto que en el pdf no puede verse bien sin hacer zoom.
+A continuacion se agrega un pdf con Las tablas de la base de datos, asi como el DER en formato jpeg.
+
+
+[Estructura y tablas.pdf](https://github.com/lilCapybara/TP-Especial-Web-2/files/12906588/Estructura.y.tablas.pdf)
+![DER](https://github.com/lilCapybara/TP-Especial-Web-2/assets/142858679/436068bc-bced-4c59-8dc3-84c4a88dbef2)
