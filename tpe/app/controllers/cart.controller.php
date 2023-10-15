@@ -59,5 +59,9 @@ class  CartController{
         $this->model->deleteTransaction($transaction_id);
         header('Location: ' . BASE_URL . 'listarTransacciones');
     }
+
+    public function emptyCart(){
+        $this->model->emptyCart();
+    }
       
 }
