@@ -30,6 +30,9 @@ public  function __construct() {
         $query->execute([$transaction_id]);
     }
     
-    
+    public function emptyCart(){    //Vacia el carro eliminando todas las transacciones
+        $query = $this->db->prepare('DELETE FROM transacciones');
+        $query->execute();
+    }
 
 }
