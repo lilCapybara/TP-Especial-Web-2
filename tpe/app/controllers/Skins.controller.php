@@ -23,7 +23,7 @@ class  SkinsController{
                                                              
     public function showSkinsXid($Champion_id) {    //Obtengo los skins segun su Champion_id       
         $Skins = $this->model->getSkinsXId($Champion_id);
-        $this->view->showSkins($Skins);
+        $this->view->showSkinsXid($Skins);
     }
 
     public function showDetailedSkin($Skin_id) {
