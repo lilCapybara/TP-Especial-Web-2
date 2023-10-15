@@ -1,0 +1,10 @@
+<h1>Detalle del skin</h1>
+<?php
+    foreach($Skins as $Skins){?>
+        <ul class="list-group">
+            <li class="list-group-item item-task ">
+                Campeon: <?=$Skins->ChampionName?> | Nombre de la skin: <?=$Skins->SkinName?> |   Precio: <?= $Skins->Precio ?>RP
+            </li>
+        </ul> 
+    <?php } ?>
+    

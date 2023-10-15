@@ -1,0 +1,51 @@
+
+<?php
+if (isset($_SESSION['user_name']) && $_SESSION['user_name'] === 'webadmin') {  //Solo mostrara esto si el usuario logueado es el admin
+?>
+
+<form action="agregar" method="POST" class="my-4">
+    <div class="row">
+        <h1>Agregar campeon</h1>
+        <div class="col-9">
+            <div class="form-group">
+                <label>Nombre del campeon</label>
+                <input required name="nombre" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="form-group">
+                <label>Rol</label>  <!--Roles-->
+                <select required name="rol" class="form-control">
+                    <option value="" disabled selected></option>
+                    <option value="tirador">Tirador</option>
+                    <option value="mago">Mago</option>
+                    <option value="tanque">Tanque</option>
+                    <option value="asesino">Asesino</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="soporte">Luchador</option>
+                    
+                </select>
+            </div>
+            
+            <div class="col-3"> <!--Permite que el boton guardar se extienda a lo ancho de la pagina-->
+            <div class="form-group">
+                <label>Precio</label>   <!--Precios-->
+                <select required name="Precio" class="form-control">
+                    <option value="" disabled selected></option>
+                    <option value="450">450</option>
+                    <option value="1200">1200</option>
+                    <option value="3500">3500</option>
+                    <option value="4800">4800</option>
+                    <option value="6300">6300</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+</form>
+
+<?php } ?>
