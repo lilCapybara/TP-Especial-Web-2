@@ -27,6 +27,7 @@ if (!empty( $_GET['action'])) {
 // login         					->	AuthController->showLogin();
 // auth          					->	AuthController->auth();
 // logout        					->	AuthController->logout();
+//							->	CartController->emptyCart();
 // listarTransacciones  				->	CartController->showTransactions();
 // agregarTransaccionSkin/:Skin_id/:Precio		->	CartController->addTransactionSkin($Skin_id,Precio);
 // agregarTransaccionCampeon/:Champion_id/:Precio	->	CartController->addTransactionChamp($Champion_id,Precio);
