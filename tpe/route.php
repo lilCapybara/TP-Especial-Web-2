@@ -14,12 +14,23 @@ if (!empty( $_GET['action'])) {
     $action = $_GET['action'];
 }
 
-// listar        ->     CatsController->showCats();
-// agregar       ->     CatsController->addCats();
-// eliminar/:ID  ->     CatsController->removeCat($id); 
-// login         ->     AuthController->showLogin();
-// auth          ->     AuthController->auth();
-// logout        ->     AuthController->logout();
+					//TABLA DE RUTEO
+// listar        					->	CatsController->showCats();
+// agregar       					->	CatsController->addCats();
+// agregarSkin	 					->	SkinsController->addSkins();	
+// eliminar/:Champion_id  				->	CatsController->removeCat($id); 
+// eliminarSkin/:Skin_id	 			->	SkinsController->removeSkins($Skin_id);
+// editar/:Champion_id					->	CatsControler->editCat($Champion_id);
+// editarSkin/:Skin_id	 				->	SkinsCOntroller->editSkins($Skin_id);
+// mostrar/:Skin_id	 				->	SkinsController->showSkinsXid($Champion_id);
+// verDetalleSkin/:Skin_id				->	SkinsController->showDetailedSkin($Skin_id);
+// login         					->	AuthController->showLogin();
+// auth          					->	AuthController->auth();
+// logout        					->	AuthController->logout();
+// listarTransacciones  				->	CartController->showTransactions();
+// agregarTransaccionSkin/:Skin_id/:Precio		->	CartController->addTransactionSkin($Skin_id,Precio);
+// agregarTransaccionCampeon/:Champion_id/:Precio	->	CartController->addTransactionChamp($Champion_id,Precio);
+// eliminarTransaccion/:transaction_id			->	CartController->RemoveTransaction($transaction_id);
 
 
 $params = explode('/', $action);
@@ -91,7 +102,8 @@ switch ($params[0]) {
     	break;
 
     case 'logout':
-
+	$vaciarCarro=new CartController;
+        $vaciarCarro->emptyCart();          //Al cerrar sesion se vacia el carrito
         $controller = new AuthController();
         $controller->logout();
         break;
