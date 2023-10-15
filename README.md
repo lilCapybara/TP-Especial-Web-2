@@ -29,6 +29,6 @@ usuario: normal || Contraseña: 654321  (Solo puede ver la lista de campeones y 
 
 A continuacion se agrega un pdf con Las tablas de la base de datos, asi como el DER en formato jpeg.
 
-[cba_cba_e-shop.pdf](https://github.com/lilCapybara/TP-Especial-Web-2/files/12908516/cba_cba_e-shop.pdf)
+[cba_cba_e-shop.pdf](https://github.com/lilCapybara/TP-Especial-Web-2/files/12908786/cba_cba_e-shop.pdf)
 
 ![DER](https://github.com/lilCapybara/TP-Especial-Web-2/assets/142858679/436068bc-bced-4c59-8dc3-84c4a88dbef2)
