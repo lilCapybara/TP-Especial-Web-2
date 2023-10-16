@@ -52,15 +52,6 @@ class  CatsController{
         }
       
 
-        public function UpdateC($nombre,$rol,$Precio,$Id){
-          $this->model->updateCats($nombre,$rol,$Precio,$Id);
-
-          header('Location: ' . BASE_URL);
-
-        }
-
-
-
         function editCat($Champion_id) {
  
             $nombre = $_POST['nombre'];
